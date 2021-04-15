@@ -1,8 +1,8 @@
 {
   "language": "python",
-  "app": "python3 ./main.py",
-  "terraformProviders": ["aws@~> 2.0"],
-  "terraformModules": ["terraform-aws-modules/vpc/aws@2.77.0"],
+  "app": "python ./main.py",
+  "terraformProviders": ["aws@3.36.0"],
+  "terraformModules": ["terraform-aws-modules/lambda/aws@1.46.0"],
   "codeMakerOutput": "imports",
   "context": {
     "excludeStackIdFromLogicalIds": "true",
