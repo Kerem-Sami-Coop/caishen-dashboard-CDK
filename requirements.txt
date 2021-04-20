@@ -1,2 +1,5 @@
-cdktf~=0.2.1
 PyYAML
+aws-cdk.aws-s3==1.99.0
+aws-cdk.aws-lambda==1.99.0
+
+flake8
