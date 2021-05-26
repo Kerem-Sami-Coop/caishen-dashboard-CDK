@@ -26,6 +26,7 @@ for i in $(cat ../${lambda_function_list}); do
 done
 
 #aws shenanigans
+cd ..
 cdk synth
 cdk bootstrap
-cdk deploy
+yes y | cdk deploy
