@@ -10,9 +10,9 @@ class RawDataStack(core.Stack):
         raw_bucket = Bucket(self, "raw-data-stack-1",
                             bucket_name="caishen-raw-data-dev")
 
-        handler = Function(self, "test-lambda",
+        handler = Function(self, "initial-load-lambda",
                            runtime=Runtime.PYTHON_3_8,
-                           code=Code.from_asset("./pipeline/export.zip"),
+                           code=Code.from_asset("./artifacts/initial_load.zip"),
                            handler="test.lambda_handler",
                            environment={
                                "BUCKET": raw_bucket.bucket_name
