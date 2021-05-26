@@ -1,1 +1,1 @@
-lambda/initial_load.py
+caishen_lambda/initial_load.py
